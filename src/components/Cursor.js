@@ -54,7 +54,7 @@ const Cursor = () => {
          display: 'flex',
      
           backgroundColor: backgroundColor,
-          padding: ' 2rem 3rem 2rem  13rem ',
+          padding: ' 4rem 3rem 2rem  13rem ',
           
           height: '120vh'
         }}
@@ -69,7 +69,7 @@ const Cursor = () => {
           transform: "translate(-50%, -50%)",
           left: cursorPosition.x,
           top: cursorPosition.y,
-   margin: '4rem',
+           margin: ' 4rem ',
             transition: " 0.3s ease-in-out",
         }}
       > 
@@ -99,12 +99,12 @@ const Cursor = () => {
       
       <Grid item xs={12} sm={6} md={8} >
         <Typography variant="body1" style={{fontWeight: 400 , fontSize: '1rem', marginBottom: '2rem', color: "white", textTransform: 'italic'}}>
-          The cursor had four buttons: blue, red, yellow, and purple. Each button would change the background color to its corresponding color.
+          The cursor had two buttons: blue and red . Each button would change the background color to its corresponding color.
         </Typography>
       </Grid>
     
-      <Grid item xs={12} sm={6} md={8}>
-        <Typography variant="body1" style={{fontWeight: 400 , fontSize: '1rem', marginBottom: '5rem', border: '2px dotted white', padding: '2rem'}}>
+      <Grid item xs={12} sm={6} md={8} style={{display: 'flex', alignItems: 'center', justifyContent: "space-around", width: '60rem'}}>
+        <Typography variant="body1" style={{fontWeight: 400 , fontSize: '1rem', marginBottom: '5rem', border: '2px dotted white', padding: '2rem', width: '50%', height: '10rem'}}>
           One day, the cursor was bored. It decided to experiment with its buttons. The cursor clicked the blue button and the world turned blue. The cursor liked the blue color, but it wanted to see what other colors looked like.
          <button
           className="color-button blue"
@@ -127,7 +127,7 @@ const Cursor = () => {
           Blue
         </button>
         </Typography>
-        <Typography variant="body1" style={{fontWeight: 400 , fontSize: '1rem', marginBottom: '5rem',  border: '2px dotted white', padding: '2rem'}}>
+        <Typography variant="body1" style={{fontWeight: 400 , fontSize: '1rem', marginBottom: '5rem',  border: '2px dotted white', padding: '2rem', width: '50%',height: '10rem'}}>
           The cursor clicked the red button and the world turned red. The cursor liked the red color.
          <button
           className="color-button red"
