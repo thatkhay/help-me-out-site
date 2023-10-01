@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import ThreeDModel from "./ThreeDImage";
+// import ThreeDModel from "./ThreeDImage";
 import Assistant from "./Assistant";
 import { Grid, Typography } from "@mui/material";
-
+import animation from  '../img/animation.gif'
  // Import your CSS file for additional styling
 
 const Cursor = () => {
@@ -69,17 +69,17 @@ const Cursor = () => {
           transform: "translate(-50%, -50%)",
           left: cursorPosition.x,
           top: cursorPosition.y,
-           margin: ' 4rem ',
-            transition: " 0.3s ease-in-out",
+           margin: '1rem 3rem  1rem  2rem ',
+            transition: ' transform 0.6s ease-in-out '
         }}
       > 
-      <div style={{display: 'flex', alignItems: 'center',  width: '17rem', flexDirection: 'column'}}>
-         <ThreeDModel />
+      <div style={{display: 'flex', alignItems: 'center',  width: '17rem',}}>
+      <img src={animation} alt="animation" style={{width: '60%', height: '60%'}}/>        
         <div style={{marginLeft:'-2rem'}}>
             <Assistant  explanation={
               hoveredButtonColor
                 ? `This button turns your background ${hoveredButtonColor}`
-                : "This is an assistant that can help you with your tasks."
+                : "Hover or click on buttons for more info."
             } /> 
         </div>
          
@@ -92,19 +92,19 @@ const Cursor = () => {
         <Grid container spacing={4}>
     
       <Grid item xs={12} sm={6} md={8}>
-        <Typography variant="body1" style={{fontWeight: 700 , fontSize: '1.5rem', marginBottom: '2rem'}}>
+        <Typography variant="body1" style={{fontWeight: 700 , fontSize: '1.5rem', marginBottom: '2rem', animation: 'fadeIn 1s ease-in', }}>
           Once upon a time, there was a cursor that could change the background color of its world.
         </Typography>
       </Grid>
       
       <Grid item xs={12} sm={6} md={8} >
-        <Typography variant="body1" style={{fontWeight: 400 , fontSize: '1rem', marginBottom: '2rem', color: "white", textTransform: 'italic'}}>
+        <Typography variant="body1" style={{fontWeight: 400 , fontSize: '1rem', marginBottom: '2rem', color: "white", textTransform: 'italic', animation: 'fadeIn 1s ease-in', }}>
           The cursor had two buttons: blue and red . Each button would change the background color to its corresponding color.
         </Typography>
       </Grid>
     
       <Grid item xs={12} sm={6} md={8} style={{display: 'flex', alignItems: 'center', justifyContent: "space-around", width: '60rem'}}>
-        <Typography variant="body1" style={{fontWeight: 400 , fontSize: '1rem', marginBottom: '5rem', border: '2px dotted white', padding: '2rem', width: '50%', height: '10rem'}}>
+        <Typography variant="body1" style={{fontWeight: 400 , fontSize: '1rem', marginBottom: '5rem', border: '2px dotted white', padding: '2rem', width: '75rem', height: '10rem', margin: '0 6rem 0 0 '}}>
           One day, the cursor was bored. It decided to experiment with its buttons. The cursor clicked the blue button and the world turned blue. The cursor liked the blue color, but it wanted to see what other colors looked like.
          <button
           className="color-button blue"
@@ -127,7 +127,7 @@ const Cursor = () => {
           Blue
         </button>
         </Typography>
-        <Typography variant="body1" style={{fontWeight: 400 , fontSize: '1rem', marginBottom: '5rem',  border: '2px dotted white', padding: '2rem', width: '50%',height: '10rem'}}>
+        <Typography variant="body1" style={{fontWeight: 400 , fontSize: '1rem', marginBottom: '5rem',  border: '2px dotted white', padding: '2rem', width: '75rem',height: '10rem', margin: '0 0 0 6rem'}}>
           The cursor clicked the red button and the world turned red. The cursor liked the red color.
          <button
           className="color-button red"
