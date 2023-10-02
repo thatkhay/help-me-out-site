@@ -1,5 +1,5 @@
 // Assistant.js
-import React, { useState } from 'react';
+
 
 
 
@@ -13,9 +13,10 @@ function Assistant({ explanation }) {
           </span>
         </div>
       )}
-      <div className="assistant-content" style={{ marginRight: '-2rem', border : '2px dotted white', borderRadius: '.2rem', display: 'flex', alignItems: 'center', justifyContent: 'center', height: '2rem', padding: '.1rem .1rem .4rem .1rem'}}>
-        <p  style={{color: 'white', height: "1rem", width: '10rem', fontWeight: 400, fontSize: '.8rem' }}>{explanation}</p>
-      </div>
+      <div className="assistant-content" style={{ marginRight: '-2rem', border : '2px dotted #CBC3E3', borderRadius: '.2rem', display: 'flex', alignItems: 'center', justifyContent: 'center', height: 'auto', backgroundColor: 'white', width: 'auto', }}>
+  <p style={{ color: 'black', fontWeight: 400, fontSize: '.8rem', maxWidth: '100%', wordWrap: 'break-word' }}>{explanation}</p>
+</div>
+
     </div>
   );
 }
