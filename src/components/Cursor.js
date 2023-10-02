@@ -5,9 +5,6 @@ import animation from '../img/animation.gif';
 import KuwaitiDinar from '../img/kwd.jpg';
 import BahrainiDinar from '../img/bahraini-dinar.jpg';
 import OmaniRial from '../img/omani-rial.webp';
-import JordanianDinar from '../img/jordanian-dinar.jpg';
-import BritishPound from '../img/pounds.jpg';
-import SwissFranc from '../img/swizz-franc.jpg';
 import questionMark from '../img/question-mark.png';
 
 const Cursor = () => {
@@ -44,7 +41,7 @@ const Cursor = () => {
   };
 
   const [moreExplanation, setExplanation] = useState(
-    "click on buttons for more info."
+    "click on the question mark icon for more info."
   );
 
   return (
@@ -89,7 +86,7 @@ const Cursor = () => {
         <img
           src={animation}
           alt="animation"
-          style={{ width: "40%", height: "40%", marginRight: "-1rem" }}
+          style={{ width: "7rem", height: "7rem", marginRight: "-1rem" }}
         />
         <Assistant explanation={moreExplanation} />
       </div>
@@ -119,7 +116,7 @@ const Cursor = () => {
                   {currency.name}
                 </Typography>
                 <Typography variant="body2" color="white">
-                  {currency.explanation}
+                  {currency.moreExplanation}
                 </Typography>
               </CardContent>
               <button
