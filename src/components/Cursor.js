@@ -108,7 +108,7 @@ const handleInteraction = (event, moreExplanation) => {
         }}
       >
         <Toolbar>
-          <Typography variant="h6">Top 3 Currencies in the World</Typography>
+          <Typography variant="h6">Top 6 Currencies in the World</Typography>
         </Toolbar>
       </AppBar>
       <div
