@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# Currency Information App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Currency App Screenshot](/path/to/screenshot.png)
 
-## Available Scripts
+## Table of Contents
+- [Description](#description)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
 
-In the project directory, you can run:
 
-### `npm start`
+## Description
+The Currency Information App is a web application that provides information about the top 3 currencies in the world: Kuwaiti dinar (KWD), Bahraini dinar (BHD), and Omani rial (OMR). Users can learn more about these currencies, their characteristics, and click on a question mark icon to get additional information.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
+- Display information about the top 3 currencies.
+- Click on the question mark icon to view more details about each currency.
+- Mobile-friendly design with cursor interaction for enhanced user experience.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
+1. Clone the repository to your local machine:
 
-### `npm test`
+git clone https://github.com/your-username/currency-information-app.git
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+css
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Navigate to the project directory:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+cd currency-information-app
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Install dependencies:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+npm install
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Usage
+1. Start the development server:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. Open your web browser and visit [http://localhost:3000](http://localhost:3000) to access the Currency Information App.
 
-### Code Splitting
+3. Explore the app by clicking on currency cards and the question mark icon for more information.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Technologies Used
+- React: A JavaScript library for building user interfaces.
+- Material-UI: A popular React UI framework for designing responsive and attractive user interfaces.
+- JavaScript: The primary programming language used for app logic.
+- HTML/CSS: Markup and styling for the app's web pages.
 
-### Analyzing the Bundle Size
+## Contributing
+Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push your changes to your fork.
+5. Submit a pull request to the main repository.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
