@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Assistant from "./Assistant";
-import { Grid, Typography, Card, CardContent, CardMedia } from "@mui/material";
+import { Grid, Typography, Card, CardContent, CardMedia, AppBar, Toolbar, Container } from "@mui/material";
 import animation from '../img/animation.gif';
 import KuwaitiDinar from '../img/kwd.jpg';
 import BahrainiDinar from '../img/bahraini-dinar.jpg';
@@ -32,24 +32,7 @@ const Cursor = () => {
       image: OmaniRial,
       moreExplanation: "Oil-rich country with a pegged currency to a basket of currencies, making it a relatively stable currency."
     },
-    {
-      name: "Jordanian dinar (JOD)",
-      explanation: "Jordanian dinar (JOD) Stable, low inflation, pegged to USD.",
-      image: JordanianDinar,
-      moreExplanation: "Stable country with low inflation and a pegged currency to the US dollar, making its currency a good option for businesses and individuals looking for a stable currency."
-    },
-    {
-      name: "British pound (GBP)",
-      explanation: "British pound (GBP) Strong economy, low inflation, floating.",
-      image: BritishPound,
-      moreExplanation: "Strong economy with low inflation and a floating currency, making it a popular currency for international trade and investment."
-    },
-    {
-      name: "Swiss franc (CHF)",
-      explanation: " Swiss franc (CHF) Safe haven, stable, low inflation.",
-      image: SwissFranc,
-      moreExplanation: "Safe haven currency with a stable economy and low inflation, making it a popular choice for investors during times of uncertainty."
-    },
+    
   ];
 
   const handleClick = (event, moreExplanation) => {
@@ -65,6 +48,12 @@ const Cursor = () => {
   );
 
   return (
+    <Container>
+      <AppBar position="static" style={{backgroundColor: 'black', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+        <Toolbar>
+          <Typography variant="h6">To 3 Currencies in the World </Typography>
+        </Toolbar>
+      </AppBar>
     <div
       style={{
         display: "flex",
@@ -104,7 +93,18 @@ const Cursor = () => {
         />
         <Assistant explanation={moreExplanation} />
       </div>
-      <Grid container spacing={8} style={{ marginLeft: "-10rem" }}>
+      
+      <Grid container spacing={2} style={{ marginLeft: "-10rem" }}>
+      <Grid item xs={12} style={{ marginBottom: "2rem" }}>
+        <Typography variant="h4" align="center" gutterBottom>
+          Currencies are the lifeblood of the global economy, allowing us to trade, invest, and protect our wealth.
+        </Typography>
+        <Typography variant="body1" align="center">
+          They come in all shapes and sizes, with different properties that suit different needs. Understanding currencies is essential for making informed financial decisions.
+        </Typography>
+      </Grid>
+   
+      <Grid container spacing={8} >
         {currencies.map((currency, index) => (
           <Grid item key={index} xs={12} sm={4}>
             <Card sx={{ maxWidth: 345, backgroundColor: "black", color: "white" }}>
@@ -143,7 +143,9 @@ const Cursor = () => {
           </Grid>
         ))}
       </Grid>
+       </Grid>
     </div>
+    </Container>
   );
 };
 
