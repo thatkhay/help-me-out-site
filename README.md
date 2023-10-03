@@ -1,6 +1,6 @@
 # Currency Information App
 
-![Currency App Screenshot](/path/to/screenshot.png)
+![twitterpost](https://github.com/thatkhay/help-me-out-site/assets/117424081/8d541d30-d1f5-4a3b-8d8a-89096208ff8b)
 
 ## Table of Contents
 - [Description](#description)
